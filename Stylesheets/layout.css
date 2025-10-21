@@ -4,6 +4,12 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "EB Garamond", sans-serif;
+}
+
+#oblozhka {
+  background-image: url(../images/Обложка.png);
+  margin: 0 -80 0 0;
 }
