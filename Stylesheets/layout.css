@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #ff4b4b;
+  color: white;
+}
+body {
+  font-family: "EB Garamond", sans-serif;
+  font-size: xx-large;
+}
