@@ -1,3 +1,4 @@
+/* Главное */
 * {
   box-sizing: border-box;
 }
@@ -7,9 +8,436 @@ html {
 
 body {
   font-family: "EB Garamond", sans-serif;
+  line-height: 120%;
 }
 
+::selection {
+  color: rgb(255, 255, 255);
+  background: red;
+}
+
+/* Обложка и облака */
 #oblozhka {
-  background-image: url(../images/Обложка.png);
-  margin: 0 -80 0 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  height: 1024px;
+}
+
+#cloud {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  margin-top: -80px;
+}
+
+#cloud img {
+  height: 100px;
+  margin: 0 -80px 0 -80px;
+}
+
+/* Предисловие и оглавление */
+#garamond {
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  align-items: center;
+  height: 1024px;
+}
+
+#garamond p {
+  font-size: 32px;
+  width: 375px;
+  margin-left: 120px;
+  line-height: 120%;
+}
+
+#garamond img {
+  width: 700px;
+  padding-left: 20px;
+}
+
+#soderzhanie {
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  height: 1024px;
+  background-color: black;
+}
+
+#soderzhanie a {
+  margin: 48px 0 0 24px;
+  font-size: 48px;
+  line-height: 48px;
+  color: white;
+  text-decoration-thickness: 4px;
+  transition: all ease 0.6s;
+}
+
+#soderzhanie a:hover {
+  color: red;
+}
+
+#soderzhanie #first {
+  margin-left: 100px;
+}
+
+#soderzhanie #second {
+  margin: 100px 0 0 10px;
+}
+
+#soderzhanie #one {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  margin-top: 100px;
+}
+
+/* Языки */
+/* Карта */
+#map {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url(../images/1map.png);
+  height: 1024px;
+  padding-top: 275px;
+  text-align: center;
+  color: white;
+}
+
+#map p {
+  font-size: 46px;
+}
+
+#map #firstText {
+  margin-bottom: 100px;
+  line-height: 54px;
+}
+
+#map #secondText {
+  margin-top: 380px;
+}
+
+#map h1 {
+  font-size: 184px;
+  font-weight: bold;
+}
+
+#tale {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-image: url(../images/Papyrus.png);
+  height: 1024px;
+}
+
+/* Мефодий */
+#mefodiy {
+  display: flex;
+  background-image: url(../images/1mefodiy.png);
+  height: 1024px;
+}
+
+#mefodiy #ch {
+  position: absolute;
+  margin-left: 1300px;
+  margin-top: 500px;
+}
+
+#mefodiy #y {
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: 200px;
+}
+
+#mefodiy #t {
+  position: absolute;
+  margin-left: 1180px;
+  margin-top: 320px;
+}
+
+#mefodiy #s {
+  position: absolute;
+  margin-left: 1250px;
+  margin-top: 210px;
+}
+
+#mefodiy #manu {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 355px;
+}
+
+/* Формы */
+/* Философ */
+#filosof {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url(../images/2formsphylosofy.png);
+  height: 1024px;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+#filosof #eyes {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 170px;
+  margin-bottom: 100px;
+}
+
+#filosof #e {
+  margin-top: 15px;
+  margin-left: 0px;
+  margin-right: 200px;
+}
+
+/* Драка */
+#draka {
+  display: flex;
+  background-image: url(../images/2formsdraka.png);
+  height: 1024px;
+}
+
+#draka #A {
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 300px;
+}
+
+#draka #B {
+  position: absolute;
+  margin-left: 440px;
+  margin-top: 140px;
+}
+
+#draka #C {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 750px;
+}
+
+#draka #D {
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 100px;
+}
+
+#draka #E {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 500px;
+}
+
+#draka #F {
+  position: absolute;
+  margin-left: 770px;
+  margin-top: 550px;
+}
+
+#draka #G {
+  position: absolute;
+  margin-left: 560px;
+  margin-top: 700px;
+}
+
+#draka #H {
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 490px;
+}
+
+#draka #I {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 775px;
+}
+
+#draka #K {
+  position: absolute;
+  margin-left: 980px;
+  margin-top: 150px;
+}
+
+#draka #P {
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 300px;
+}
+
+#draka #Q {
+  position: absolute;
+  margin-left: 820px;
+  margin-top: 320px;
+}
+
+#draka #S {
+  position: absolute;
+  margin-left: 1250px;
+  margin-top: 800px;
+}
+
+#draka #T {
+  position: absolute;
+  margin-left: 975px;
+  margin-top: 480px;
+}
+
+#draka #V {
+  position: absolute;
+  margin-left: 1100px;
+  margin-top: 470px;
+}
+
+#draka #X {
+  position: absolute;
+  margin-left: 920px;
+  margin-top: 670px;
+}
+
+#draka #Z {
+  position: absolute;
+  margin-left: 840px;
+  margin-top: 820px;
+}
+
+/* Глифы */
+#chuma {
+  background-image: url(../images/3chuma.png);
+  height: 1024px;
+}
+
+#chuma #b {
+  position: absolute;
+  margin-left: 240px;
+  margin-top: 420px;
+}
+
+#chuma #l {
+  position: absolute;
+  margin-left: 1060px;
+  margin-top: 340px;
+}
+
+#chuma #t {
+  position: absolute;
+  margin-left: 440px;
+  margin-top: 660px;
+}
+
+#chuma #u {
+  position: absolute;
+  margin-left: 880px;
+  margin-top: 550px;
+}
+
+#chuma #o {
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: 720px;
+}
+
+#chuma #y {
+  position: absolute;
+  margin-left: 680px;
+  margin-top: 640px;
+}
+
+#chuma #zag {
+  position: absolute;
+  margin-left: 1250px;
+  margin-top: 780px;
+}
+
+#chuma #z {
+  position: absolute;
+  margin-left: 1220px;
+  margin-top: 360px;
+}
+
+#chuma #zh {
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 420px;
+}
+
+/* Начертания */
+#kazn {
+  background-image: url(../images/4nachertkazn.png);
+  height: 767px;
+  color: white;
+  font-size: 72px;
+}
+
+#kazn #extra {
+  position: absolute;
+  margin-left: 710px;
+  margin-top: 360px;
+  font-weight: 800;
+}
+
+#kazn #bold {
+  position: absolute;
+  margin-left: 680px;
+  margin-top: 200px;
+  font-weight: 700;
+}
+
+#kazn #semibold {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 130px;
+  font-weight: 600;
+  font-size: 52px;
+}
+
+#kazn #medium {
+  position: absolute;
+  margin-left: 340px;
+  margin-top: 200px;
+  font-weight: 500;
+  font-size: 52px;
+}
+
+#kazn #regular {
+  position: absolute;
+  margin-left: 210px;
+  margin-top: 280px;
+  font-weight: 400;
+}
+
+#kazn #italic {
+  position: absolute;
+  margin-left: 1100px;
+  margin-top: 220px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 110%;
+}
+
+/* Подвал */
+#podval {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url(../images/Podval.png);
+  height: 500px;
+}
+
+#podval a {
+  font-size: 92px;
+  text-decoration-thickness: 4px;
+  color: white;
+}
+
+#podval a:hover {
+  color: rgb(255, 0, 0);
+  text-decoration-thickness: 4px;
+  transition: all ease 0.6s;
 }
