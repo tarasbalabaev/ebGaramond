@@ -21,7 +21,11 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-image: url(../images/Kover.png);
+  height: 1024px;
+  width: 1440px;
+}
+
+#oblozhka img {
   height: 1024px;
   width: 1440px;
 }
@@ -335,6 +339,13 @@ body {
   background-image: url(../images/3chuma.png);
   height: 1024px;
   width: 1440px;
+}
+
+#chuma p {
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  font-size: 48px;
 }
 
 #chuma #b {
