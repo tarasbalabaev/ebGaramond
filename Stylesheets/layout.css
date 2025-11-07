@@ -6,14 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body,
-html {
-  cursor: url(../images/Курсор.svg), auto;
-}
-
 body {
   font-family: "EB Garamond", sans-serif;
   line-height: 120%;
+  cursor: url(../images/Курсор.svg), auto;
 }
 
 ::selection {
